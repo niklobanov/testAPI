@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (4.8.2)
-  - SwiftLint (0.31.0)
+  - PKHUD (5.2.1)
+  - SwiftLint (0.32.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - PKHUD (~> 5.0)
   - SwiftLint
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - PKHUD
     - SwiftLint
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 7fa1ebb6628802f3d21bfe7c4eb879bc8f0cc469
+PODFILE CHECKSUM: 5c4f5d1fcef0ded44aab22deb82172d3f67391b0
 
 COCOAPODS: 1.6.1

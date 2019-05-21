@@ -9,5 +9,6 @@ target 'TestAPI' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SwiftLint'
+  pod 'PKHUD', '~> 5.0'
 
 end
