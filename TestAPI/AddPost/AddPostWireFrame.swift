@@ -33,5 +33,4 @@ final class AddPostWireFrame: AddPostWireFrameProtocol {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-
 }

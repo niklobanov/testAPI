@@ -43,12 +43,6 @@ final class MainView: UIViewController {
         presenter?.viewDidLoad()
     }
 
-
-    deinit {
-        print("Remove NotificationCenter Deinit")
-        NotificationCenter.default.removeObserver(self)
-    }
-
     func setUpNavigationItem() {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPost))
         navigationItem.setRightBarButton(addButton, animated: true)
