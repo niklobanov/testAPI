@@ -17,6 +17,22 @@ protocol MainInteractorInputProtocol: class {
 final class MainInteractor: MainInteractorInputProtocol {
     weak var presenter: MainInteractorOutputProtocol?
 
+    init() {
+        NotificationCenter.default.addObserver(
+            forName: NSNotification.Name.newPost,
+            object: nil,
+            queue: nil
+        ) { _ in
+            self.fetchPosts()
+        }
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+
+
     func getSession() {
         if UserDefaults.session == nil {
             Service().getSession { newSession, error in

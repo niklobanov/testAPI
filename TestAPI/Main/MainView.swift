@@ -30,15 +30,7 @@ final class MainView: UIViewController {
     }
 
     override func viewDidLoad() {
-
         setUpNavigationItem()
-        NotificationCenter.default.addObserver(
-        forName: NSNotification.Name.newPost,
-        object: nil,
-        queue: nil
-        ) { _ in
-            self.presenter?.viewDidLoad()
-        }
         presenter?.getSession()
         presenter?.viewDidLoad()
     }
